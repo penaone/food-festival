@@ -2,7 +2,7 @@
   "name": "food-festival",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "assets/js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
@@ -13,26 +13,28 @@
     "type": "git",
     "url": "git+https://github.com/penaone/food-festival.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/penaone/food-festival/issues"
   },
   "homepage": "https://github.com/penaone/food-festival#readme",
+  "keywords": [],
+  "devDependencies": {
+    "@webpack-cli/serve": "^1.1.0",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^7.0.1",
+    "webpack": "^4.44.2",
+    "webpack-bundle-analyzer": "^4.2.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.11.0"
+  },
   "dependencies": {
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
     "mongoose": "^5.11.7",
-    "popper.js": "^1.16.1"
-  },
-  "devDependencies": {
-    "file-loader": "^6.2.0",
-    "image-webpack-loader": "^7.0.1",
-    "webpack": "^5.10.1",
-    "webpack-bundle-analyzer": "^4.2.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1",
     "webpack-pwa-manifest": "^4.3.0"
   }
 }
