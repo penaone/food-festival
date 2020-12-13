@@ -10,7 +10,7 @@
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
-/*!*****************************************************!*
+/*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
   \*****************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
@@ -20,7 +20,7 @@ eval("/*!\n  * Bootstrap v4.5.3 (https://getbootstrap.com/)\n  * Copyright 2011-
 /***/ }),
 
 /***/ "./assets/img/food-table.jpg":
-/*!***********************************!*
+/*!***********************************!*\
   !*** ./assets/img/food-table.jpg ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -31,7 +31,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ }),
 
 /***/ "./assets/img/grill.jpg":
-/*!******************************!*
+/*!******************************!*\
   !*** ./assets/img/grill.jpg ***!
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -42,7 +42,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ }),
 
 /***/ "./node_modules/jquery/dist/jquery.js":
-/*!********************************************!*
+/*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
 /***/ (function(module, exports) {
@@ -52,7 +52,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ }),
 
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
-/*!***************************************************!*
+/*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -130,7 +130,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /************************************************************************/
 (() => {
-/*!*****************************!*
+/*!*****************************!*\
   !*** ./assets/js/script.js ***!
   \*****************************/
 eval("/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\nconst img1 = __webpack_require__(/*! ../../assets/img/food-table.jpg */ \"./assets/img/food-table.jpg\");\nconst img2 = __webpack_require__(/*! ../../assets/img/grill.jpg */ \"./assets/img/grill.jpg\");\n\n$(document).ready(function() {\n  // First image is hard coded in index.html\n\nconst carouselSlides = [\n  {\n    title: \"We travel all over the US\",\n    subtitle: \"Check out our schedule!\",\n    img: img1,\n    btnText: \"View Schedule\",\n    btnUrl: \"schedule.html\"\n  },\n  {\n    title: \"Our food is seriously the bomb!\",\n    subtitle: \"What are you waiting for?\",\n    img: img2,\n    btnText: \"Purchase Tickets\",\n    btnUrl: \"tickets.html\"\n  },\n]\n\ncarouselSlides.forEach((slide, i) => {\n  $(\".carousel-inner\").append(`\n<div class=\"carousel-item fullscreen-carousel\" style=\"background-image: url(\"${slide.img}\")\">\n  <div class=\"d-flex h-100 align-items-center justify-content-center carousel-caption\">\n      <div class=\"container\">\n        <div class=\"row align-items-center justify-content-center\">\n            <h2 class=\"display-4 mb-2\">${slide.title}</h2>\n        </div>\n        <div class=\"row align-items-center justify-content-center\"> \n          <h3>${slide.subtitle}</h3>\n        </div>\n        <div class=\" mt-4 row align-items-center justify-content-center\"> \n          <a class=\"btn btn-primary\" href=\"${slide.btnUrl}\">\n              ${slide.btnText}\n          </a>\n        </div>\n      </div>\n  </div>\n</div>`)\n})\n});\n\n//# sourceURL=webpack://food-festival/./assets/js/script.js?");

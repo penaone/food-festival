@@ -10,7 +10,7 @@
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./assets/js/domMethods.js":
-/*!*********************************!*
+/*!*********************************!*\
   !*** ./assets/js/domMethods.js ***!
   \*********************************/
 /***/ ((module) => {
@@ -20,7 +20,7 @@ eval("function createEl(htmlString, attrs, ...children) {\r\n  if (typeof htmlSt
 /***/ }),
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
-/*!*****************************************************!*
+/*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
   \*****************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
@@ -30,7 +30,7 @@ eval("/*!\n  * Bootstrap v4.5.3 (https://getbootstrap.com/)\n  * Copyright 2011-
 /***/ }),
 
 /***/ "./node_modules/jquery/dist/jquery.js":
-/*!********************************************!*
+/*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
 /***/ (function(module, exports) {
@@ -40,7 +40,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ }),
 
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
-/*!***************************************************!*
+/*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /************************************************************************/
 (() => {
-/*!*****************************!*
+/*!*****************************!*\
   !*** ./assets/js/events.js ***!
   \*****************************/
 eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\nconst createEl = __webpack_require__(/*! ./domMethods */ \"./assets/js/domMethods.js\");\r\n\r\n\r\nif (window.location.href.indexOf(\"event\") > -1) {\r\n  const currentEvent = JSON.parse(localStorage.getItem(\"currentEvent\")) || {\r\n      title: \"Title Placeholder\",\r\n      subtitle: \"\",\r\n      description: \"\"\r\n  };\r\n\r\n  const pageEl = document.querySelector(\"#page\");\r\n  \r\n  const containerEl = createEl(\"div\", {class: \"container\"},\r\n    createEl(\"div\", {class: \"card mb-3\"}, \r\n      createEl(\"img\", {class: \"card-img-top\", style: \"width: 5px\", src: currentEvent.image || \"https://via.placeholder.com/350x150\"}),\r\n      createEl(\"div\", {class: \"card-body\"}, \r\n        createEl(\"h1\", {class: \"card-title\"}, currentEvent.title || \"\"),\r\n        createEl(\"h2\", {class: \"text-muted\"}, currentEvent.subtitle || \"\"),\r\n        createEl(\"p\", {class: \"card-text mt-3\"}, currentEvent.description || createLoremIpsum(100)),\r\n        createEl(\"a\", {class: \"btn btn-primary\", href: \"tickets.html\"}, \"Buy Tickets\")\r\n      )\r\n    ),\r\n    \r\n  )\r\n  pageEl.appendChild(containerEl)\r\n}\r\n\r\n\n\n//# sourceURL=webpack://food-festival/./assets/js/events.js?");

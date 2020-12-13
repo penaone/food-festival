@@ -10,7 +10,7 @@
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
-/*!*****************************************************!*
+/*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
   \*****************************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
@@ -20,7 +20,7 @@ eval("/*!\n  * Bootstrap v4.5.3 (https://getbootstrap.com/)\n  * Copyright 2011-
 /***/ }),
 
 /***/ "./node_modules/jquery/dist/jquery.js":
-/*!********************************************!*
+/*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
 /***/ (function(module, exports) {
@@ -30,7 +30,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /***/ }),
 
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
-/*!***************************************************!*
+/*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
   \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -108,7 +108,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /************************************************************************/
 (() => {
-/*!******************************!*
+/*!******************************!*\
   !*** ./assets/js/tickets.js ***!
   \******************************/
 eval("__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\r\n\r\nif (window.location.href.indexOf(\"tickets\") > -1) {\r\n\r\n  const purchaseBtn = document.getElementById(\"purchaseBtn\");\r\n  const purchaseEmail = document.getElementById(\"purchaseEmail\");\r\n  const modalEl = document.querySelector(\".modal-content\");\r\n  const modalBodyEl = document.querySelector(\".modal-body\");\r\n  const modalFooterEl = document.querySelector(\".modal-footer\");\r\n\r\n\r\n  function purchaseTicket () {\r\n\r\n    modalEl.removeChild(modalBodyEl)\r\n    modalEl.removeChild(modalFooterEl)\r\n\r\n    modalEl.append(createEl(\"div\", {class: \"modal-body\"},\r\n      createEl(\"h5\", {class: \"modal-title\"}, \r\n      `Thanks for requesting a ticket purchase! We will send an email to ${purchaseEmail.value} to complete the order form!`\r\n      ),\r\n    ))\r\n    \r\n  }\r\n  purchaseBtn.addEventListener(\"click\", purchaseTicket);\r\n}\n\n//# sourceURL=webpack://food-festival/./assets/js/tickets.js?");
